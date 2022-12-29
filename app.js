@@ -33,7 +33,10 @@ app.get('/api/products', (req, res) => {
             filterProducts = filterProducts.slice(0,Number(limit))
         }
     
-        res.status(200).json(filterProducts)
+        res.status(200).json({
+            succes: true,
+            data: filterProducts
+        })
     }
 })
 //router param
