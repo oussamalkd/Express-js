@@ -17,8 +17,6 @@ app.use("/api/people", peopleRoutes)
 app.use("/api", authRoutes)
 
 
-
-
 // Live server
 app.listen(2405, () => {
     console.log("App runing on http://localhost:2405");
